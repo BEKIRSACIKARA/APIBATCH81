@@ -1,8 +1,7 @@
 package get_request;
 
-import base_url.JsonplaceholderBaseUrl;
+import base_urls.JsonplaceholderBaseUrl;
 import io.restassured.response.Response;
-import org.codehaus.jackson.annotate.JsonTypeInfo;
 import org.junit.Test;
 
 import java.util.HashMap;

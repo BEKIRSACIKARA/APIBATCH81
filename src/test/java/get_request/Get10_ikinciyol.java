@@ -1,10 +1,9 @@
 package get_request;
 
-import base_url.GoRestBaseUrl;
+import base_urls.GoRestBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 import test_data.GoRestTestData;
-import test_data.JsonPlaceHolderTestData;
 
 import java.util.HashMap;
 import java.util.Map;

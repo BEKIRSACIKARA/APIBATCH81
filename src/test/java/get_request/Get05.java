@@ -1,14 +1,10 @@
 package get_request;
 
-import base_url.JsonplaceholderBaseUrl;
-import base_url.RestfulBaseUrl;
-import io.restassured.http.ContentType;
+import base_urls.RestfulBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import org.junit.runner.Request;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
