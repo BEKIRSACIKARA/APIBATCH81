@@ -34,10 +34,13 @@ public class Get14ObjeMapper_Pojo extends JsonplaceholderBaseUrl {
         spec.pathParams("first", "todos", "second", 198);
         //set the expectedData
         JsonPlaceHolderPojo expectedData = new JsonPlaceHolderPojo(10, "quis eius est sint explicabo", true);
+        System.out.println("expectedData = " + expectedData);
         //send   the    request and get the response
         Response response = given().spec(spec).when().get("/{first}/{second}");
+        response.prettyPrint();
 //do asserttion
        JsonPlaceHolderPojo actualData= ObjectMapperUtils.convertJsonTojava(response.asString(),JsonPlaceHolderPojo.class);
+        System.out.println("actualData = " + actualData);
         assertEquals(200, response.getStatusCode());
         assertEquals(expectedData.getUserId(),actualData.getUserId());
         assertEquals(expectedData.getTitle(),actualData.getTitle());

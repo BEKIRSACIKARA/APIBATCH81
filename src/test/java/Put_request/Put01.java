@@ -1,4 +1,4 @@
-package post_request;
+package Put_request;
 
 import base_urls.JsonplaceholderBaseUrl;
 import io.restassured.http.ContentType;
